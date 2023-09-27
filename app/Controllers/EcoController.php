@@ -10,4 +10,8 @@ class EcoController extends BaseController
     {
         //
     }
+    public function una()
+    {
+      return view('nav');
+    }
 }

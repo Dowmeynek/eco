@@ -1,0 +1,14 @@
+CRITICAL - 2023-09-27 12:27:43 --> Invalid file: "views/head.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('views/head.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('views/head', [], true)
+ 3 APPPATH\Views\nav.php(3): view('views/head')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\eco\\app\\Views\\nav.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('nav', [], true)
+ 7 APPPATH\Controllers\EcoController.php(15): view('nav')
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EcoController->ulo()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EcoController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eco\\public\\index.php')
