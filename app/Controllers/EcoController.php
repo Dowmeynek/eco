@@ -10,8 +10,8 @@ class EcoController extends BaseController
     {
         //
     }
-    public function una()
+    public function taas()
     {
-      return view('nav');
+      return view('taas/nav');
     }
 }

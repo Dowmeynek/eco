@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
-<?= view('head');?>
+<?= view('taas/head');?>
   <body>
 		<!-- Start Header/Navigation -->
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
