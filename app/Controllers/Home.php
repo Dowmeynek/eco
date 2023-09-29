@@ -9,6 +9,13 @@ class Home extends BaseController
   {
     $this->product = new \App\Models\ProductModel();
   }
+  public function shop()
+  {
+    $data =[
+      'products' => $this->product->findAll()
+    ];
+    return view('products', $data);
+  }
   public function index()
   {
     $data =[
