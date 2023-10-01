@@ -58,7 +58,7 @@ class AdminController extends BaseController
           }else{
               $session->setFlashdata('msg','Failed to create an account. Try Again');
               $data['validation'] = $this->validator;
-              return view('/login');
+              return view('adminregister');
         }
 }
 }
