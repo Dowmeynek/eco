@@ -36,7 +36,29 @@ class AdminController extends BaseController
                 return redirect()->to('/login');
             }else{
                 $data['validation'] = $this->validator;
-                return view('adminreg',$data);
+                return view('/register',$data);
             }
         }
+        public function authlog()
+        {
+          $session = session();
+          helper(['form']);
+          $rules = [
+              'username' => 'required|min_length[1]|max_length[99]',
+              'password' => 'required|min_length[1]|max_length[99]'
+          ];
+          if($this->validate($rules)){
+              $main = new AdminModel();
+              $data = [
+                  'username' => $this->request->getVar('username'),
+                  'password' => password_hash($this->request->getVar('password'),PASSWORD_DEFAULT)
+              ];
+              $main->save($data);
+              return redirect()->to('/main');
+          }else{
+              $session->setFlashdata('msg','Failed to create an account. Try Again');
+              $data['validation'] = $this->validator;
+              return view('/login');
+        }
+}
 }

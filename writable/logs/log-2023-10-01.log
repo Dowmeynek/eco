@@ -28,3 +28,83 @@ in SYSTEMPATH\Database\BaseConnection.php on line 646.
  9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eco\\public\\index.php')
+CRITICAL - 2023-10-01 13:47:23 --> Unclosed '{' on line 9
+in APPPATH\Controllers\AdminController.php on line 64.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\eco\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eco\\public\\index.php')
+CRITICAL - 2023-10-01 13:47:35 --> Unclosed '{' on line 9
+in APPPATH\Controllers\AdminController.php on line 64.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\eco\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eco\\public\\index.php')
+CRITICAL - 2023-10-01 13:49:14 --> Invalid file: "adminregister.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adminregister.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('adminregister', [], true)
+ 3 APPPATH\Controllers\AdminController.php(61): view('adminregister')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->authlog()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eco\\public\\index.php')
+CRITICAL - 2023-10-01 13:51:11 --> Invalid file: "/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/login.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/login', [], true)
+ 3 APPPATH\Controllers\AdminController.php(61): view('/login')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->authlog()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eco\\public\\index.php')
+CRITICAL - 2023-10-01 13:51:45 --> Invalid file: "/registe.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/registe.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/registe', [], true)
+ 3 APPPATH\Controllers\AdminController.php(61): view('/registe')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->authlog()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eco\\public\\index.php')
+CRITICAL - 2023-10-01 13:51:55 --> Invalid file: "/register.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/register.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/register', [], true)
+ 3 APPPATH\Controllers\AdminController.php(61): view('/register')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->authlog()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eco\\public\\index.php')
+CRITICAL - 2023-10-01 13:52:24 --> Invalid file: "/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/login.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/login', [], true)
+ 3 APPPATH\Controllers\AdminController.php(61): view('/login')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->authlog()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eco\\public\\index.php')
+CRITICAL - 2023-10-01 13:52:34 --> Invalid file: "/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/login.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/login', [], true)
+ 3 APPPATH\Controllers\AdminController.php(61): view('/login')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->authlog()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\eco\\public\\index.php')
