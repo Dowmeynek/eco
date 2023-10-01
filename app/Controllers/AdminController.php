@@ -19,4 +19,24 @@ class AdminController extends BaseController
     {
         return view ('adminreg');
     }
+    public function authreg()
+        {
+            helper(['form']);
+            $rules = [
+                'username' => 'required|min_length[1]|max_length[25]',
+                'password' => 'required|min_length[1]|max_length[25]'
+            ];
+            if($this->validate($rules)){
+                $adminModel = new AdminModel();
+                $data = [
+                    'username' => $this->request->getVar('username'),
+                    'password' => password_hash($this->request->getVar('password'),PASSWORD_DEFAULT)
+                ];
+                $adminModel->save($data);
+                return redirect()->to('/login');
+            }else{
+                $data['validation'] = $this->validator;
+                return view('adminreg',$data);
+            }
+        }
 }
