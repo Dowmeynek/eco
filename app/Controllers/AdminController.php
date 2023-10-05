@@ -36,6 +36,7 @@ class AdminController extends BaseController
                 return redirect()->to('/login');
             }else{
                 $data['validation'] = $this->validator;
+
                 return view('/register',$data);
             }
         }
@@ -54,11 +55,11 @@ class AdminController extends BaseController
                   'password' => password_hash($this->request->getVar('password'),PASSWORD_DEFAULT)
               ];
               $main->save($data);
-              return redirect()->to('/main');
+              return redirect()->to('products');
           }else{
               $session->setFlashdata('msg','Failed to create an account. Try Again');
               $data['validation'] = $this->validator;
-              return view('adminregister');
+              return view('admin/index');
         }
 }
 }
